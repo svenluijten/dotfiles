@@ -1,3 +1,6 @@
+# Prefer /usr/local/bin over /usr/bin
+export PATH=/usr/local/bin:$PATH
+
 # Load globally installed Composer binaries.
 export PATH="$HOME/.composer/vendor/bin:$PATH"
 
