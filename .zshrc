@@ -39,5 +39,7 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
+export EDITOR="vim"
+
 eval "$(ssh-agent -s)"
 ssh-add

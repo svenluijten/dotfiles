@@ -12,6 +12,7 @@ brew 'grep'
 brew 'mas'
 brew 'pkg-config'
 brew 'tree'
+brew 'vim'
 brew 'zsh'
 
 # Development

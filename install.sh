@@ -51,6 +51,9 @@ git config --global user.name "$USER_NAME"
 git config --global user.email "$USER_EMAIL"
 git config --global core.excludesFile "$HOME/.gitignore"
 
+echo "Symlinking the .vimrc file into $HOME..."
+ln -s $HOME/.dotfiles/.vimrc $HOME/.vimrc
+
 if [ ! -d "$HOME/.ssh" ]; then
   echo "Symlinking the .ssh/ folder into $HOME..."
   ln -s $HOME/.dotfiles/.ssh $HOME/.ssh
