@@ -15,7 +15,7 @@ $ osascript -e 'tell app "System Events" to restart'
 
 ## Recommended next steps
 You should now have a fully functioning macOS installation ready to go. However, there are some other things I recommend you
-do before you do anything else.
+do before anything else.
 
 ### Sign in to all apps
 This might take a while, but obviously you'll want to sign in on, and configure all the apps to your liking. Start with 1Password, and
