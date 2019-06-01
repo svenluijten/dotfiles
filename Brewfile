@@ -58,6 +58,10 @@ cask 'viscosity'
 cask 'vlc'
 cask 'whatsapp'
 
+# Fonts
+cask 'font-fira-code' 		# https://github.com/tonsky/FiraCode
+cask 'font-source-code-pro'	# https://github.com/adobe-fonts/source-code-pro
+
 # Mac App Store Applications
 mas 'amphetamine', id: 937984704
 mas 'bear', id: 1091189122
