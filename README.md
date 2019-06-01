@@ -7,9 +7,14 @@ First, **make sure all important work is either in Google Drive, Dropbox, or pus
 After you've done that, run the following commands. This may take a while and requires _some_ level of interaction from the user.
 
 ```sh
+# Clone the repository into "~/.dotfiles".
 $ git clone https://github.com/svenluijten/dotfiles ~/.dotfiles
 $ cd ~/.dotfiles
+
+# Run the installation script.
 $ ./install.sh
+
+# Restart the computer.
 $ osascript -e 'tell app "System Events" to restart'
 ```
 
