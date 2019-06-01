@@ -1,0 +1,35 @@
+[user]
+	useConfigOnly = true
+
+[alias]
+	st = "status -sb"
+	lg = "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
+	df = "diff --"
+	ap = "add -p"
+	find = "log --pretty=\"format:%Cblue%H %Cgreen%s%Creset\" --abbrev-commit --grep"
+	nah = "!git reset --hard && git clean -df"
+
+[branch]
+	autosetuprebase = always
+
+[core]
+	whitespace = "-trailing-space"
+
+[push]
+	default = current
+	followTags = true
+
+[color]
+	ui = true
+
+[tag]
+	forceSignAnnotated = true
+
+[log]
+	abbrevCommit = true
+	date = relative
+	decorate = full
+	showRoot = true
+
+[grep]
+	lineNumber = true

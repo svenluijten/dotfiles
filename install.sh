@@ -44,37 +44,12 @@ mkdir "$HOME/.npm-global"
 npm config set prefix "$HOME/.npm-global"
 
 echo "Setting git configuration..."
+ln -s $HOME/.dotfiles/.gitignore $HOME/.gitignore
+ln -s $HOME/.dotfiles/.gitconfig $HOME/.gitconfig
+
 git config --global user.name "$USER_NAME"
 git config --global user.email "$USER_EMAIL"
-git config --global user.useConfigOnly true
-
-git config --global alias.st "status -sb"
-git config --global alias.lg "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
-git config --global alias.df "diff --"
-git config --global alias.ap "add -p"
-git config --global alias.find "log --pretty=\"format:%Cblue%H %Cgreen%s%Creset\" --abbrev-commit --grep"
-git config --global alias.nah "!git reset --hard && git clean -df"
-
-git config --global branch.autosetuprebase always
-
 git config --global core.excludesFile "$HOME/.gitignore"
-git config --global core.whitespace "-trailing-space"
-
-git config --global push.default current
-git config --global push.followTags true
-
-git config --global color.ui true
-
-git config --global tag.forceSignAnnotated true
-
-git config --global log.abbrevCommit true
-git config --global log.date relative
-git config --global log.decorate full
-git config --global log.showRoot true
-
-git config --global grep.lineNumber true
-
-ln -s $HOME/.dotfiles/.gitignore $HOME/.gitignore
 
 if [ ! -d "$HOME/.ssh" ]; then
   echo "Symlinking the .ssh/ folder into $HOME..."
