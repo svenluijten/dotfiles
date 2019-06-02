@@ -29,9 +29,10 @@ work your way down [the list](Brewfile#L28).
 ### Adding SSH keys to servers/services
 Copy your public SSH key (`pbcopy < $HOME/.ssh/id_ed25519.pub`) and add it to all your servers and services (GitHub, Laravel Forge, ...).
 
-### Install your IDE
-These dotfiles installed [JetBrains Toolbox](https://www.jetbrains.com/toolbox/), but none of JetBrains' IDEs. I recommend you use the
-Toolbox app to install the IDE(s) you need.
+### Install Adobe & JetBrains products
+These dotfiles installed [Adobe Creative Cloud](https://www.adobe.com/creativecloud.html) and 
+[JetBrains Toolbox](https://www.jetbrains.com/toolbox/), but no other Adobe or JetBrains products. I recommend you use the
+Creative Cloud and Toolbox apps to install the programs you need.
 
 ### Configure PhpStorm settings
 If you're using PhpStorm, [configure the settings repository](https://www.jetbrains.com/help/phpstorm/sharing-your-ide-settings.html#settings-repository)
