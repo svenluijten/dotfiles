@@ -39,6 +39,9 @@ mv composer.phar /usr/local/bin/composer
 
 /usr/local/bin/composer global require laravel/installer
 
+echo "Installing latest version of NodeJS and npm..."
+n latest
+
 echo "Setting npm's global directory to something read- & writeable..."
 mkdir "$HOME/.npm-global"
 npm config set prefix "$HOME/.npm-global"
