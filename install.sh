@@ -20,6 +20,9 @@ brew update
 brew tap homebrew/bundle
 brew bundle
 
+echo "Installing oh-my-zsh..."
+sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+
 echo "Symlinking .zshrc into $HOME..."
 rm -f $HOME/.zshrc
 ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
