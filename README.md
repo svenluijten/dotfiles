@@ -36,7 +36,7 @@ Creative Cloud and Toolbox apps to install the programs you need.
 
 ### Configure PhpStorm settings
 If you're using PhpStorm, [configure the settings repository](https://www.jetbrains.com/help/phpstorm/sharing-your-ide-settings.html#settings-repository)
-to automatically apply all my settings.
+to automatically apply [all my settings](https://github.com/svenluijten/phpstorm-settings).
 
 ## Disclaimer
 I pieced these dotfiles together from various sources, most of which are attributed in comments throughout the source code. I am not
