@@ -60,12 +60,12 @@ git config --global core.excludesFile "$HOME/.gitignore"
 echo "Symlinking the .vimrc file into $HOME..."
 ln -s $HOME/.dotfiles/.vimrc $HOME/.vimrc
 
-if [ ! -d "$HOME/.ssh" ]; then
+if [[ ! -d "$HOME/.ssh" ]]; then
   echo "Copying the .ssh/ folder into $HOME..."
   cp $HOME/.dotfiles/.ssh $HOME/.ssh
 fi
 
-if [ ! -f $HOME/.ssh/id_ed25519 ]; then
+if [[ ! -f $HOME/.ssh/id_ed25519 ]]; then
   echo "Generating a new ed25519 SSH key pair..."
   ssh-keygen -t ed25519 -b 4096 -C "$USER_EMAIL" -f $HOME/.ssh/id_ed25519
 fi
