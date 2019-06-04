@@ -61,8 +61,8 @@ echo "Symlinking the .vimrc file into $HOME..."
 ln -s $HOME/.dotfiles/.vimrc $HOME/.vimrc
 
 if [ ! -d "$HOME/.ssh" ]; then
-  echo "Symlinking the .ssh/ folder into $HOME..."
-  ln -s $HOME/.dotfiles/.ssh $HOME/.ssh
+  echo "Copying the .ssh/ folder into $HOME..."
+  cp $HOME/.dotfiles/.ssh $HOME/.ssh
 fi
 
 if [ ! -f $HOME/.ssh/id_ed25519 ]; then
