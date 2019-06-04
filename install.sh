@@ -18,7 +18,7 @@ fi
 echo "Installing Homebrew formulae..." # See the 'Brewfile'.
 brew update
 brew tap homebrew/bundle
-brew bundle
+brew bundle --verbose
 
 echo "Installing oh-my-zsh..."
 sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
