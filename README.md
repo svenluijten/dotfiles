@@ -1,5 +1,5 @@
 # Sven's Dotfiles
-This project contains all my macOS dotfiles. These have been heavily inspired by [Dries Vints' dotfiles](https://github.com/driesvints/dotfiles).
+This project contains all my macOS dotfiles. Completely stolen from [Dries Vints' dotfiles](https://github.com/driesvints/dotfiles).
 
 ## How to use
 First, **make sure all important work is either in Google Drive, Dropbox, or pushed to your Git provider.**.
