@@ -16,8 +16,8 @@ if test ! $(which brew); then
 fi
 
 echo "Installing Homebrew formulae..." # See the 'Brewfile'.
-brew update
 brew tap homebrew/bundle
+brew update
 brew bundle --verbose
 
 echo "Installing oh-my-zsh..."
