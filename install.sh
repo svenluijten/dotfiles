@@ -23,9 +23,9 @@ brew bundle --verbose
 echo "Installing oh-my-zsh..."
 sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 
-echo "Symlinking .zshrc into $HOME..."
+echo "Copying .zshrc into $HOME..."
 rm -f $HOME/.zshrc
-ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
+cp $HOME/.dotfiles/.zshrc $HOME/.zshrc
 
 echo "Changing the default shell to 'zsh'..."
 chsh -s $(which zsh)
@@ -50,15 +50,19 @@ mkdir "$HOME/.npm-global"
 npm config set prefix "$HOME/.npm-global"
 
 echo "Setting git configuration..."
-ln -s $HOME/.dotfiles/.gitignore $HOME/.gitignore
-ln -s $HOME/.dotfiles/.gitconfig $HOME/.gitconfig
+rm -f $HOME/.gitignore
+cp $HOME/.dotfiles/.gitignore $HOME/.gitignore
+
+rm -f $HOME/.gitconfig
+cp $HOME/.dotfiles/.gitconfig $HOME/.gitconfig
 
 git config --global user.name "$USER_NAME"
 git config --global user.email "$USER_EMAIL"
 git config --global core.excludesFile "$HOME/.gitignore"
 
-echo "Symlinking the .vimrc file into $HOME..."
-ln -s $HOME/.dotfiles/.vimrc $HOME/.vimrc
+echo "Copying the .vimrc file into $HOME..."
+rm -f $HOME/.vimrc
+cp $HOME/.dotfiles/.vimrc $HOME/.vimrc
 
 if [[ ! -d "$HOME/.ssh" ]]; then
   echo "Copying the .ssh/ folder into $HOME..."
