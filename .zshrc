@@ -1,9 +1,6 @@
 # Path to your `.dotfiles` directory.
 export DOTFILES="$HOME/.dotfiles"
 
-source $DOTFILES/path.zsh
-source $DOTFILES/aliases.zsh
-
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -38,6 +35,9 @@ HIST_STAMPS="yyyy-mm-dd"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
+
+source $DOTFILES/path.zsh
+source $DOTFILES/aliases.zsh
 
 export EDITOR="vim"
 
