@@ -6,7 +6,7 @@ alias reloadcli="source $HOME/.zshrc"
 alias reloaddns="dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
 alias phpstorm='open -a /Applications/PhpStorm.app "`pwd`"'
 alias c="clear"
-alias path="echo $PATH | sed 's/:/\n/g'"
+alias path="echo $PATH | sed 's/:/\'$'\n/g'"
 
 # Folders
 alias code="cd $HOME/Code"
