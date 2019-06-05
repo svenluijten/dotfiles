@@ -16,7 +16,7 @@ brew 'vim'
 brew 'zsh'
 
 # Development
-brew 'imagick'
+brew 'imagemagick'
 brew 'mariadb'
 brew 'mas'
 brew 'nginx'
