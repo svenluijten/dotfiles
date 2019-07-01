@@ -8,6 +8,7 @@
 	ap = "add -p"
 	find = "log --pretty=\"format:%Cblue%H %Cgreen%s%Creset\" --abbrev-commit --grep"
 	nah = "!git reset --hard && git clean -df"
+	publish = "!git push origin $(git symbolic-ref --short HEAD) -u"
 
 [branch]
 	autosetuprebase = always
