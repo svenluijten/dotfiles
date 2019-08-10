@@ -1,6 +1,9 @@
 # JetBrains IDE
 .idea/
 
+# PhpUnit
+.phpunit.result.cache
+
 # macOS
 *.DS_Store
 .DocumentRevisions-V100
