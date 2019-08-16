@@ -74,6 +74,9 @@ if [[ ! -f $HOME/.ssh/id_ed25519 ]]; then
   ssh-keygen -t ed25519 -b 4096 -C "$USER_EMAIL" -f $HOME/.ssh/id_ed25519
 fi
 
+echo "Setting up Go environment..."
+mkdir -p $HOME/Code/go
+
 # Set macOS preferences.
 # We will run this last because this will reload the shell.
 source .macos
