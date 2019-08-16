@@ -9,7 +9,7 @@ alias c="clear"
 alias path="echo $PATH | sed 's/:/\'$'\n/g'"
 
 # Folders
-alias code="cd $HOME/Code"
+alias co="cd $HOME/Code"
 alias dotfiles="cd $DOTFILES"
 
 # Development
