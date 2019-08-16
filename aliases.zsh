@@ -13,7 +13,6 @@ alias co="cd $HOME/Code"
 alias dotfiles="cd $DOTFILES"
 
 # Development
-alias code="cd ~/Code"
 alias a="php artisan"
 alias cfresh="rm -rf vendor/ && composer install"
 
