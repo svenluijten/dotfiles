@@ -4,7 +4,6 @@ alias ..="cd .."
 alias copyssh="pbcopy < $HOME/.ssh/id_ed25519.pub"
 alias reloadcli="source $HOME/.zshrc"
 alias reloaddns="dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
-alias phpstorm='open -a /Applications/PhpStorm.app "`pwd`"'
 alias c="clear"
 alias path="echo $PATH | sed 's/:/\'$'\n/g'"
 
