@@ -2,7 +2,7 @@
 This project contains all my macOS dotfiles. These have been heavily inspired by [Dries Vints' dotfiles](https://github.com/driesvints/dotfiles).
 
 ## How to use
-First, **make sure all important work is either in Google Drive, Dropbox, or pushed to your Git provider.**.
+First, **make sure all important work is either in Google Drive, Dropbox, or pushed to your Git provider.**
 
 After you've done that, run the following commands. This may take a while and requires _some_ level of interaction from the user.
 
