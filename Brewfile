@@ -17,6 +17,7 @@ brew 'vim'
 brew 'zsh'
 
 # Development
+brew 'brew-php-switcher'
 brew 'imagemagick'
 brew 'mariadb'
 brew 'mas'

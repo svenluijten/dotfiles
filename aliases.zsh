@@ -14,6 +14,7 @@ alias dotfiles="cd $DOTFILES"
 # Development
 alias a="php artisan"
 alias cfresh="rm -rf vendor/ && composer install"
+alias bps="brew-php-switcher"
 
 # Docker
 alias dcr="docker-compose run --rm"
