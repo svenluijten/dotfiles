@@ -17,5 +17,6 @@ alias cfresh="rm -rf vendor/ && composer install"
 alias bps="brew-php-switcher"
 
 # Docker
+alias dcm="docker-compose"
 alias dcr="docker-compose run --rm"
 alias dex="docker exec -it"
