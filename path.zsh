@@ -11,5 +11,9 @@ export PATH="$HOME/.npm-global/bin:$PATH"
 # Use project specific binaries before global ones.
 export PATH="node_modules/.bin:vendor/bin:$PATH"
 
-# Include Go's 'bin' folder in the path.
+# Include Go's "bin" folder in the path.
 export PATH="$GOPATH/bin:$PATH"
+
+# Include Python's "bin" folder in the path.
+export PATH="$HOME/Library/Python/2.7/bin:$PATH"
+
