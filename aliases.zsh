@@ -14,6 +14,8 @@ alias dotfiles="cd $DOTFILES"
 # Development
 alias a="php artisan"
 alias cfresh="rm -rf vendor/ && composer install"
+alias nfresh="rm -rf node_modules && npm install"
+alias yfresh="rm -rf node_modules && yarn"
 alias bps="brew-php-switcher"
 
 # Docker
