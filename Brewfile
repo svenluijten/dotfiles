@@ -1,62 +1,46 @@
 # Taps
-tap 'caskroom/cask'
-tap 'caskroom/fonts'
+tap 'homebrew/cask'
+tap 'homebrew/cask-fonts'
 
 # Binaries
 brew 'bash'
 brew 'bat'
+brew 'brew-php-switcher'
 brew 'curl'
 brew 'git'
 brew 'gnupg2'
 brew 'go'
 brew 'grep'
-brew 'mas'
-brew 'pkg-config'
-brew 'tree'
-brew 'vim'
-brew 'zsh'
-
-# Development
-brew 'brew-php-switcher'
 brew 'imagemagick'
 brew 'mariadb'
 brew 'mas'
-brew 'nginx'
 brew 'n'
+brew 'nginx'
 brew 'php'
+brew 'pkg-config'
 brew 'redis'
+brew 'svn' # Necessary for other packages/fonts. Don't at me.
+brew 'tree'
+brew 'vim'
+brew 'zsh'
 
 # Applications
 cask '1password'
 cask 'adobe-creative-cloud'
 cask 'alfred'
 cask 'backblaze'
-cask 'background-music'
-cask 'cheatsheet'
-cask 'dash'
 cask 'docker'
-cask 'dropbox'
-cask 'fliqlo'
-cask 'flux'
-cask 'google-backup-and-sync'
-cask 'google-chrome'
 cask 'gpg-suite'
-cask 'hyperswitch'
 cask 'imageoptim'
 cask 'iterm2'
 cask 'jetbrains-toolbox'
 cask 'kap'
-cask 'karabiner-elements'
-cask 'omnidisksweeper'
 # cask 'phpstorm' --- install via jetbrains-toolbox
-cask 'pock'
-cask 'postman'
-cask 'sequel-pro'
+cask 'rectangle'
+cask 'sequel-ace'
 cask 'slack'
 cask 'smooze'
-cask 'spectacle'
 cask 'spotify'
-cask 'sublime-text'
 cask 'viscosity'
 cask 'vlc'
 cask 'whatsapp'
@@ -66,5 +50,8 @@ cask 'font-fira-code' 		# https://github.com/tonsky/FiraCode
 cask 'font-source-code-pro'	# https://github.com/adobe-fonts/source-code-pro
 
 # Mac App Store Applications
-mas 'amphetamine', id: 937984704
-mas 'bear', id: 1091189122
+mas 'Bear', id: 1091189122
+mas 'Things', id: 904280696
+mas 'Hush', id: 1544743900
+mas 'Hidden Bar', id: 1452453066
+mas 'Day One', id: 1055511498
