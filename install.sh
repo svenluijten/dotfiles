@@ -1,7 +1,7 @@
 #!/bin/sh
 
 USER_NAME="Sven Luijten"
-USER_EMAIL="svenluijten1995@gmail.com"
+USER_EMAIL="contact@svenluijten.com"
 
 echo "Setting up your Mac."
 
