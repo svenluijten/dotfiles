@@ -1,50 +1,53 @@
 [user]
-	useConfigOnly = true
+    useConfigOnly = true
 
 [alias]
-	st = "status"
-	lg = "log --graph --date=human --pretty=default"
-	df = "diff --"
-	ap = "add -p"
-	find = "log --pretty=\"format:%Cblue%H %Cgreen%s%Creset\" --abbrev-commit --grep"
-	nah = "!git reset --hard && git clean -df"
-	publish = "!git push origin $(git symbolic-ref --short HEAD) -u"
-	track = "!git branch --set-upstream-to origin/$1"
+    st = "status"
+    lg = "log --graph --date=human --pretty=default"
+    df = "diff --"
+    ap = "add -p"
+    find = "log --pretty=\"format:%Cblue%H %Cgreen%s%Creset\" --abbrev-commit --grep"
+    nah = "!git reset --hard && git clean -df"
+    publish = "!git push origin $(git symbolic-ref --short HEAD) -u"
+    track = "!git branch --set-upstream-to origin/$1"
 
 [pretty]
-	default = format:%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cd) %C(bold blue)<%an>%Creset
+    default = format:%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cd) %C(bold blue)<%an>%Creset
 
 [branch]
-	autosetuprebase = always
+    autosetuprebase = always
 
 [core]
-	whitespace = "-trailing-space,tabwidth=4"
+    whitespace = "-trailing-space,tabwidth=4"
 
 [push]
-	followTags = true
+    followTags = true
 
 [tag]
-	forceSignAnnotated = true
+    forceSignAnnotated = true
 
 [grep]
-	lineNumber = true
+    lineNumber = true
 
 [log]
-	abbrevCommit = true
-	date = relative
-	decorate = full
-	showRoot = true
+    abbrevCommit = true
+    date = relative
+    decorate = full
+    showRoot = true
 
 [init]
-	defaultBranch = main
+    defaultBranch = main
 
 [pull]
-	rebase = true
+    rebase = true
 
 [rerere]
-	enabled = true
+    enabled = true
+
+[rebase]
+    updateRefs = true
 
 [status]
-	showUntrackedFiles = all
-	short = true
-	branch = true
+    showUntrackedFiles = all
+    short = true
+    branch = true
